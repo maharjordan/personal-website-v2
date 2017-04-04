@@ -1,0 +1,63 @@
+@font-face{
+	font-family: Noto;
+	src: url("../fonts/noto/NotoSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: Lato-Reg;
+	src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+}
+
+main{
+    color: white;
+}
+
+h1, h2, h3, h4{
+	font-family: Noto, Serif;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.even_row{
+    background-color: #225ea8;
+}
+
+.odd_row{
+    background-color: #253494;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    border: solid white;
+}
+
+.logo{
+	color: white;
+}
+
+.contact_info{
+		background-color: rgba(255, 255, 255, .7);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 2px;
+		margin-bottom: 5px;
+		color: black;
+		font-family: Lato-Reg, Sans-Seriff;
+		font-size: 14pt;
+}
+
+.icon{
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	border: solid 2px;
+	border-radius: 2px;
+	background-color: rgb(98, 161, 174);
+}
+
+.body_text{
+	font-size: 14pt;
+	font-family: Lato-Reg, Sans-Seriff;
+}
