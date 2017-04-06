@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		
     </head>
 
     <body>
@@ -416,9 +418,11 @@
 
                 <section class="row text-center">
                     <article class="col-md-4">
-                        <i class="logo lightcolor ultradarkbgcolor 
+                    <button type="button" data-toggle="modal" href="modals/essays_modal" data-target="#essays_modal">
+						<i class="logo lightcolor ultradarkbgcolor 
                         fa fa-laptop fa-4x"></i>
 						<figcaption>Essays</figcaption>
+					</button>
                     </article>
                     <article class="col-md-4">
                         <i class="logo lightcolor ultradarkbgcolor 
@@ -432,7 +436,7 @@
                     </article>
                 </section>
             </div>
-
+			
 <!--
     CONTACT
 -->
@@ -442,26 +446,77 @@
                         <h2>Contact Me</h2>
                     </article>
                 </section>
-
+				
                 <section class="row">
-                    <article class="col-md-12 text-center">
+                    <div class="col-md-4"></div>
+					<article class="col-md-8">
                         <form>
-                            <label>Name: </label> <br />
-                            <input type="text" style="width: 50%;"> <br />
-                            
-                            <label>E-mail: </label> <br />
-                            <input type="email" style="width: 50%;"> <br />
+                            <div class="form-group">
+								<label for="sender_name">Name: </label> 
+								<input type="text" class="form-control" id="sender_name" style="width: 50%;">
 
-                            <label>Message: </label> <br />
-                            <input type="text" style="height: 300px; width: 50%;"> <br />
+                            <label for="sender_email">E-mail: </label>
+                            <input type="email" class="form-control" id="sender_email" style="width: 50%;">
+
+                            <label for="sender_message">Message: </label> <br />
+                            <textarea type="text" class="form-control" id"sender_message" style="height: 300px; width: 50%;"></textarea>
+							<input type="submit" class="btn btn-info btn-lg" value="Send">
 							
-							<input type="submit" value="Send">
+							</div>
                         </form>
                     </article>
                 </section>
             </div>
 
         </main>
+		
+<!--
+	MODALS
+-->
+		
+		<div id="essays_modal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Essays</h4>
+					</div>
+					
+						<div class="modal-body">
+							<a href="articles/market_analysis_2016.pdf" target="_blank">Nova Scotia Market Analysis for Small Producers</a>
+							<br />
+							<br />
+							<a href="articles/nslabour2015.pdf" target = "_black">Review of Nova Scotia's Labour Force in 2015</a>
+							<br />
+							<br />
+							<a href="articles/millenialslazy.pdf" target = "_blank">Are Millenials Lazy?</a>
+							<br />
+							<br />
+							<a href="http://www.finance.alberta.ca/aboutalberta/economic-trends/2015/2015-11-economic-trends.pdf#page=3" target="_blank">Slowing Economy Keeps Costs in Check</a>
+							<br />
+							<br />
+							<a href="http://www.finance.alberta.ca/aboutalberta/economic-trends/2015/2015-09-economic-trends.pdf#page=3" target="_blank">Trends in Renovation Spending</a>
+							<br />
+							<br />
+							<a href="http://www.finance.alberta.ca/aboutalberta/economic-trends/2015/2015-07-economic-trends.pdf#page=3" target="_blank">Going Beyond GDP: The Index of Economic Well-Being</a>
+							<br />
+							<br />
+							<a href="http://www.ijiet.org/papers/462-H00031.pdf" target="_blank">Can Higher Education Exams Be Shortened? A Proposed
+				Methodology </a>
+							<br />
+							<br />
+							<a href="http://www.waset.org/publications/9997150" target="_blank"> Can Exams Be Shortened? Using a New Empirical
+				Approach to Test in Finance Courses </a>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
     </body>
 
 </html>
