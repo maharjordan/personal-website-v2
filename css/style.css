@@ -19,9 +19,12 @@ h1, h2, h3, h4{
 a {
 	text-decoration: none !important;
 }
+a:hover{
+	color: aquamarine;
+}
 
 .even_row{
-    background-color: #225ea8;
+    background-color: #225EA8;
 }
 
 .odd_row{
@@ -48,6 +51,11 @@ a {
 		font-size: 14pt;
 }
 
+button{
+	background-color: transparent;
+	border: none;
+}
+
 .icon{
 	width: 5rem;
 	height: 5rem;
@@ -55,6 +63,10 @@ a {
 	border: solid 2px;
 	border-radius: 2px;
 	background-color: rgb(98, 161, 174);
+}
+
+i:hover{
+	color: aquamarine;
 }
 
 .body_text{
